@@ -26,7 +26,7 @@ export const register = async (values:z.infer<typeof RegisterSchema>) => {
         data:{
             name,email,password:hashedPassword,
         }
-    })
+    }) 
 
     // TODO: send varification token email
     return {success:"User Created!"};
